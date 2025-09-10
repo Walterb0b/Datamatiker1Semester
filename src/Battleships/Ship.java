@@ -1,18 +1,33 @@
-import java.util.Random;
+package Battleships;
+
 public class Ship {
-    private int[] location;
+    private static int[] location;
+    private static int numberOfHits;
 
     public Ship(int[] location){this.location = location;}
 
-    static Random rand = new Random();
-    Ship ship = new Ship(new int[]{0, 0, 0});
-
-    public int[] setLocation(int[] location) {
-        int i = rand.nextInt(0, 3);
-        this.location = new int[]{i, i + 1, i +2 };
-        return this.location;
+    public static void checkHit(){
+        String result = "";
+        for(int i = 0; i < location.length; i++){
+            if(location[i] == GameHelper.userInput()) {
+                numberOfHits++;
+                result = "Hit!!!";
+            } else {
+                result = "Miss!!";
+               if(numberOfHits == 3){
+                   System.out.println("You have sunk the enemies ship!");
+               }
+            }
+        }
+        System.out.println(result);
     }
 
-    ship.setLocation();
+    public static boolean isSunk(){
+         if(numberOfHits == 3) {
+             return true;
+         } else{
+             return false;
+         }
+    }
 
 }

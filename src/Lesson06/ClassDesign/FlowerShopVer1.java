@@ -23,7 +23,7 @@ public class FlowerShopVer1 {
         unknown.setOriginCountry("Thailand");
 
         // Display with getters + toString
-        System.out.println(rose.toString());
+        System.out.println(rose);
         System.out.println(tulip.toString());
         System.out.println(lily.toString());
         System.out.println(unknown.toString());

@@ -1,15 +1,14 @@
-package TheDiceMan;
+package Hjemmeopgaver.Hjemmeopgave06;
 
-public class DiceMan {
-    //Get the number rolled on the dice and display activity
-    private static int numberOfActivities = 6;
+public class DiceMan extends Dice{
+    private final static int numberOfActivities = 5;
 
-    public static int getNumberOfActivities(){
+    static int getNumberOfActivities(){
         return numberOfActivities;
     }
-
-    public static void getActivity() {
-        for(int i = 0; i < 5; i++) {
+    //Get the number rolled on the dice and display activity
+    static void doActivity() {
+        for(int i = 0; i < (getNumberOfActivities()); i++) {
             switch (Dice.rollDice()) {
                 case 1 -> System.out.println("The DiceMan eats breakfast 🥐");
                 case 2 -> System.out.println("The DiceMan studies something boring 🤓");
