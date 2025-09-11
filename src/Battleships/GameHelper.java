@@ -3,13 +3,19 @@ package Battleships;
 import java.util.Scanner;
 
 public class GameHelper {
+    private static Scanner scanner = new Scanner(System.in);
     public static int userInput() {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Enter your shot");
+        System.out.print("Enter your shot: ");
 
-        int input = scanner.nextInt();
+        while(!scanner.hasNextInt()){
+            System.out.println("Invalid input. Try again.");
+            scanner.next();
+        }
 
-        return input;
+        return scanner.nextInt();
+    }
+    public static void close(){
+        scanner.close();
     }
 }
