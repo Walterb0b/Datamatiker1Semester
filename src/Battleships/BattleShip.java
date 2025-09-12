@@ -13,7 +13,8 @@ public class BattleShip {
         Random rand = new Random();
         int i = rand.nextInt(5);
 
-        int[] location = {i, i + 1, i + 2};
+        int[] location;
+        location = new int[]{i, i + 1, i + 2};
         Ship enemyShip = new Ship(location);
 
 
