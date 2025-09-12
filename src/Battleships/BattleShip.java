@@ -1,5 +1,4 @@
 package Battleships;
-import java.util.Arrays;
 import java.util.Random;
 public class BattleShip {
     public static void main(String[] args) {
