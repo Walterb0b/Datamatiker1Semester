@@ -3,7 +3,7 @@ package Lesson04.Operators;
 
 public class Grade {
     //attribute private!
-    private int score;
+    private final int score;
 
     // Constructor
     public Grade(int score) {

@@ -16,7 +16,6 @@ public class BattleShip {
         location = new int[]{i, i + 1, i + 2};
         Ship enemyShip = new Ship(location);
 
-
         //Game loop
         while(!enemyShip.isSunk()){
             int userGuess = GameHelper.userInput();
