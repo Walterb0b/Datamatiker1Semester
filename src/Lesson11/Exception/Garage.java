@@ -1,5 +1,7 @@
 package Lesson11.Exception;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
+
 //Garage
 class Garage {
     private ArrayList<Car> cars = new ArrayList<>();
@@ -24,6 +26,9 @@ class Garage {
         }
         catch (NumberFormatException e) {
             System.out.println("Error: you have to input a number");
+        }
+        catch (InputMismatchException e) {
+            System.out.println("Error: your input does not work");
         }
     }
 }

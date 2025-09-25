@@ -15,7 +15,7 @@ public class Navneskilt
     public static String Stjerner()
     {
         //Vi bruger et for loop til at printe stjernerne
-        int antalStjerner = 20;
+        int antalStjerner = 25;
         for (int i = 0; i < antalStjerner; i++)
             System.out.print("*");
         //Der skal være et return statement i vores string for at den vil printe

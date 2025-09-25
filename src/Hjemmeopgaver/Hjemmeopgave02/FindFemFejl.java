@@ -7,5 +7,4 @@ public class FindFemFejl {
         System.out.println("Hello World!");
         //System skal skrives med stort "S"
     } //<-- Den her tuborgparentes manglede
-
 }
