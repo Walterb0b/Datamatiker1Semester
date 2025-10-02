@@ -13,3 +13,12 @@ public class Main {
         }
     }
 }
+
+
+public class numbers{
+    //TODO: create array of (random) numbers
+    //TODO: Function findMax
+    //TODO: for loop to search array
+    //TODO: if number is max, return it
+    //TODO: run findMax
+}
