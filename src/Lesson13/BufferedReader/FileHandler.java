@@ -16,8 +16,7 @@ public class FileHandler {
             System.out.println("Fejl ved skrivning: " + e.getMessage());
         }
     }
-
-
+    
 
     // Læs tekst fra en fil og returnér som String
     public String readFromFile(String filename) {
@@ -32,4 +31,5 @@ public class FileHandler {
         }
         return sb.toString();
     }
+
 }

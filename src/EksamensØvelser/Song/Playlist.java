@@ -1,10 +1,9 @@
 package EksamensØvelser.Song;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Playlist {
-    private final List<Song> playlist;
+    private ArrayList<Song> playlist;
 
     public Playlist(){
         this.playlist = new ArrayList<>();

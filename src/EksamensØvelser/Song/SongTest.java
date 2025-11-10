@@ -1,5 +1,9 @@
 package EksamensØvelser.Song;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class SongTest {
     public static void main(String[] args) {
         Playlist playlist = new Playlist();
@@ -8,6 +12,7 @@ public class SongTest {
         playlist.add(new Song("Smooth Criminal", "Michael Jackson", 4.2));
         playlist.add(new Song("Don't stop believing", "Journey", 5.0));
         playlist.add(new Song("Money for nothing", "Dire Straits", 8.3));
+
 
         playlist.showSongs();
 
